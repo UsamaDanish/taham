@@ -1,8 +1,16 @@
 import PageBanner from "@/components/PageBanner";
 import Layout from "@/layout";
+import { projects } from "@/src/data/project";
 import Link from "next/link";
+import { useState } from "react";
 
 const ProjectGrid = () => {
+
+  const [selectedFilter, setSelectedFilter] = useState('Show All');
+
+  const handleFilterClick = (filterType) => {
+    setSelectedFilter(filterType);
+  };
   return (
     <Layout>
       <PageBanner pageName={"Project Grid"} />
@@ -21,239 +29,76 @@ const ProjectGrid = () => {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-xl-4 col-md-6">
-              <div className="project-grid-item wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img
-                    src="assets/images/projects/project-grid1.jpg"
-                    alt="Project Grid"
-                  />
-                  <a
-                    className="plus"
-                    href="assets/images/projects/project-grid1.jpg"
-                  />
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="project-details">
-                      Web Development
-                    </Link>
-                  </h4>
-                  <Link legacyBehavior href="/project-details">
-                    <a className="detail-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="project-grid-item wow fadeInUp delay-0-4s">
-                <div className="image">
-                  <img
-                    src="assets/images/projects/project-grid2.jpg"
-                    alt="Project Grid"
-                  />
-                  <a
-                    className="plus"
-                    href="assets/images/projects/project-grid2.jpg"
-                  />
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="project-details">
-                      Mobile Applications
-                    </Link>
-                  </h4>
-                  <Link legacyBehavior href="/project-details">
-                    <a className="detail-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
+          <div class="portfolio-area inner-bg-shpes section-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="portfolio-filter">
+                    <li
+                      onClick={() => handleFilterClick('Show All')}
+                      className={selectedFilter === 'Show All' ? 'active' : ''}
+                    >
+                      Show All
+                    </li>
+                    <li
+                      onClick={() => handleFilterClick('mobile-app')}
+                      className={selectedFilter === 'mobile-app' ? 'active' : ''}
+                    >
+                      Mobile App
+                    </li>
+                    <li
+                      onClick={() => handleFilterClick('web-design')}
+                      className={selectedFilter === 'web-design' ? 'active' : ''}
+                    >
+                      Website Design
+                    </li>
+                    <li
+                      onClick={() => handleFilterClick('dashboard-design')}
+                      className={selectedFilter === 'dashboard-design' ? 'active' : ''}
+                    >
+                      Dashboard Design
+                    </li>
+                    <li
+                      onClick={() => handleFilterClick('graphics-design')}
+                      className={selectedFilter === 'graphics-design' ? 'active' : ''}
+                    >
+                      Graphics Design
+                    </li>
+                    <li
+                      onClick={() => handleFilterClick('logo-design')}
+                      className={selectedFilter === 'logo-design' ? 'active' : ''}
+                    >
+                      Lago Design
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="project-grid-item wow fadeInUp delay-0-6s">
-                <div className="image">
-                  <img
-                    src="assets/images/projects/project-grid3.jpg"
-                    alt="Project Grid"
-                  />
-                  <a
-                    className="plus"
-                    href="assets/images/projects/project-grid3.jpg"
-                  />
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="project-details">
-                      IT Consulting
-                    </Link>
-                  </h4>
-                  <Link legacyBehavior href="/project-details">
-                    <a className="detail-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="project-grid-item wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img
-                    src="assets/images/projects/project-grid4.jpg"
-                    alt="Project Grid"
-                  />
-                  <a
-                    className="plus"
-                    href="assets/images/projects/project-grid4.jpg"
-                  />
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="project-details">
-                      Business Analysis
-                    </Link>
-                  </h4>
-                  <Link legacyBehavior href="/project-details">
-                    <a className="detail-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="project-grid-item wow fadeInUp delay-0-4s">
-                <div className="image">
-                  <img
-                    src="assets/images/projects/project-grid5.jpg"
-                    alt="Project Grid"
-                  />
-                  <a
-                    className="plus"
-                    href="assets/images/projects/project-grid5.jpg"
-                  />
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="project-details">
-                      UX/UI Strategy
-                    </Link>
-                  </h4>
-                  <Link legacyBehavior href="/project-details">
-                    <a className="detail-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="project-grid-item wow fadeInUp delay-0-6s">
-                <div className="image">
-                  <img
-                    src="assets/images/projects/project-grid6.jpg"
-                    alt="Project Grid"
-                  />
-                  <a
-                    className="plus"
-                    href="assets/images/projects/project-grid6.jpg"
-                  />
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="project-details">
-                      Cyber Security
-                    </Link>
-                  </h4>
-                  <Link legacyBehavior href="/project-details">
-                    <a className="detail-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="project-grid-item wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img
-                    src="assets/images/projects/project-grid7.jpg"
-                    alt="Project Grid"
-                  />
-                  <a
-                    className="plus"
-                    href="assets/images/projects/project-grid7.jpg"
-                  />
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="project-details">
-                      Market Research
-                    </Link>
-                  </h4>
-                  <Link legacyBehavior href="/project-details">
-                    <a className="detail-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="project-grid-item wow fadeInUp delay-0-4s">
-                <div className="image">
-                  <img
-                    src="assets/images/projects/project-grid8.jpg"
-                    alt="Project Grid"
-                  />
-                  <a
-                    className="plus"
-                    href="assets/images/projects/project-grid8.jpg"
-                  />
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="project-details">
-                      Product Engineering
-                    </Link>
-                  </h4>
-                  <Link legacyBehavior href="/project-details">
-                    <a className="detail-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="project-grid-item wow fadeInUp delay-0-6s">
-                <div className="image">
-                  <img
-                    src="assets/images/projects/project-grid9.jpg"
-                    alt="Project Grid"
-                  />
-                  <a
-                    className="plus"
-                    href="assets/images/projects/project-grid9.jpg"
-                  />
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link legacyBehavior href="project-details">
-                      Software Engineering
-                    </Link>
-                  </h4>
-                  <Link legacyBehavior href="/project-details">
-                    <a className="detail-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
+
+              <div className="row portfolio-list">
+                {projects.map(x => {
+                  if (selectedFilter === 'Show All' || x.type === selectedFilter) {
+                    return (
+                      <div className="col-md-4 mobile-app">
+                        <div className="portfolio-wrap">
+                          <div className={`single-portfolio-item lage ${x.image}`}>
+                            <div className="portfolio-hover">
+                              <div className="portfolio-hover-table">
+                                <div className="portfolio-hover-table-cell">
+                                  <a href="Ring-Tok.html"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="portfolio-description">
+                            <h6>{x.date}</h6>
+                            <h3>{x.name}</h3>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  }
+                  return null;
+                })}
               </div>
             </div>
           </div>

@@ -53,10 +53,10 @@ const MobileMenu = () => {
                 Home
               </a>
               <ul style={activeSubMenu("/")}>
-               
+
               </ul>
               <div className="dropdown-btn" onClick={() => active("/")}>
-                
+
               </div>
             </li>
             <li className="dropdown">
@@ -198,26 +198,9 @@ const DeskTopMenu = () => {
         <ul className="navigation clearfix">
           <li className="dropdown">
             <a href="/">Home</a>
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
           </li>
           <li className="dropdown">
-            <a href="/">services</a>
-            <ul>
-              <li>
-                <Link href="services">Services One</Link>
-              </li>
-              <li>
-                <Link href="services2">Services Two</Link>
-              </li>
-              <li>
-                <Link href="service-details">service details</Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
+            <a href="/services2">services</a>
           </li>
           <li className="dropdown">
             <a href="/">Project</a>
@@ -236,26 +219,7 @@ const DeskTopMenu = () => {
               <span className="fas fa-chevron-down" />
             </div>
           </li>
-          <li className="dropdown">
-            <a href="/">shop</a>
-            <ul>
-              <li>
-                <Link href="shop">shop grid</Link>
-              </li>
-              <li>
-                <Link href="product-details">product details</Link>
-              </li>
-              <li>
-                <Link href="cart">cart page</Link>
-              </li>
-              <li>
-                <Link href="checkout">checkout</Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="fas fa-chevron-down" />
-            </div>
-          </li>
+
           <li className="dropdown">
             <a href="/">blog</a>
             <ul>
@@ -274,12 +238,6 @@ const DeskTopMenu = () => {
             <a href="/">pages</a>
             <ul>
               <li>
-                <Link href="about">About us</Link>
-              </li>
-              <li>
-                <Link href="contact">Contact us</Link>
-              </li>
-              <li>
                 <Link href="team">Team</Link>
               </li>
               <li>
@@ -295,6 +253,12 @@ const DeskTopMenu = () => {
             <div className="dropdown-btn">
               <span className="fas fa-chevron-down" />
             </div>
+          </li>
+          <li className="dropdown">
+            <a href="/contact">Contact Us</a>
+          </li>
+          <li className="dropdown">
+            <a href="/about">About Us</a>
           </li>
         </ul>
       </div>
