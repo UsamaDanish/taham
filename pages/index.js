@@ -142,7 +142,7 @@ const Index = () => {
                   <h2>Taham Tech Design and Digital Marketing Agency</h2>
                 </div>
                 <p>
-                Welcome to Taham Tech Design and Digital Marketing Agency, where creativity converges with technology to deliver comprehensive solutions that elevate brands and drive digital success. We are a dynamic team of designers, marketers, and strategists dedicated to crafting compelling visuals and implementing effective digital strategies.                </p>
+                  Welcome to Taham Tech Design and Digital Marketing Agency, where creativity converges with technology to deliver comprehensive solutions that elevate brands and drive digital success. We are a dynamic team of designers, marketers, and strategists dedicated to crafting compelling visuals and implementing effective digital strategies.                </p>
                 <div className="about-btns mb-45">
                   <Link legacyBehavior href="/about">
                     <a className="theme-btn mt-15">
@@ -266,7 +266,7 @@ const Index = () => {
                   <li>Bringing new IT solutions to the market</li>
                   <li>To be included the list of the best 100 IT companies</li>
                 </ul>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href="/services2">
                   <a className="theme-btn style-two mt-15">
                     View Details <i className="fas fa-long-arrow-right" />
                   </a>
@@ -288,7 +288,7 @@ const Index = () => {
                   <li>Bringing new IT solutions to the market</li>
                   <li>To be included the list of the best 100 IT companies</li>
                 </ul>
-                <Link legacyBehavior href="/project-details">
+                <Link legacyBehavior href="/services2">
                   <a className="theme-btn style-two mt-15">
                     View Details <i className="fas fa-long-arrow-right" />
                   </a>
@@ -335,7 +335,20 @@ const Index = () => {
               </div>
             </div>
             <div className="col-xl-4 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-4s">
+              <div className="service-two-item wow fadeInUp delay-0-4s"
+                style={{
+                  transition: "all 0.5s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.transform = "scale(1.07)";
+                  e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.3)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.transform = "";
+                  e.currentTarget.style.boxShadow = "";
+                }}>
                 <div className="icon">
                   <i className="flaticon-networking" />
                 </div>
@@ -353,7 +366,20 @@ const Index = () => {
               </div>
             </div>
             <div className="col-xl-4 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-6s">
+              <div className="service-two-item wow fadeInUp delay-0-6s"
+                style={{
+                  transition: "all 0.5s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.transform = "scale(1.07)";
+                  e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.3)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.transform = "";
+                  e.currentTarget.style.boxShadow = "";
+                }}>
                 <div className="icon">
                   <i className="flaticon-coding" />
                 </div>
@@ -371,7 +397,20 @@ const Index = () => {
               </div>
             </div>
             <div className="col-xl-4 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-3s">
+              <div className="service-two-item wow fadeInUp delay-0-3s"
+                style={{
+                  transition: "all 0.5s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.transform = "scale(1.07)";
+                  e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.3)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.transform = "";
+                  e.currentTarget.style.boxShadow = "";
+                }}>
                 <div className="icon">
                   <i className="flaticon-app-development" />
                 </div>
@@ -389,7 +428,20 @@ const Index = () => {
               </div>
             </div>
             <div className="col-xl-4 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-5s">
+              <div className="service-two-item wow fadeInUp delay-0-5s"
+                style={{
+                  transition: "all 0.5s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.transform = "scale(1.07)";
+                  e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.3)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.transform = "";
+                  e.currentTarget.style.boxShadow = "";
+                }}>
                 <div className="icon">
                   <i className="flaticon-logo" />
                 </div>
@@ -407,7 +459,20 @@ const Index = () => {
               </div>
             </div>
             <div className="col-xl-4 col-md-6">
-              <div className="service-two-item wow fadeInUp delay-0-7s">
+              <div className="service-two-item wow fadeInUp delay-0-7s"
+                style={{
+                  transition: "all 0.5s ease",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.transform = "scale(1.07)";
+                  e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.3)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.transform = "";
+                  e.currentTarget.style.boxShadow = "";
+                }}>
                 <div className="icon">
                   <i className="flaticon-seo" />
                 </div>
@@ -683,9 +748,8 @@ const Index = () => {
         </div>
       </section>
       {/* Statistics Area end */}
-     
       {/* Testimonials Area start */}
-      <section className="testimonials-area py-130 rpy-100 rel z-1">
+      <section className="testimonials-area py-130 rpy-100 rel z-1" style={{ paddingTop: 300 }}>
         <div className="container">
           <div className="row align-items-center justify-content-between">
             <div className="col-xl-5 col-lg-6">

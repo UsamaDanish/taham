@@ -12,9 +12,9 @@ const Counter = dynamic(() => import("@/src/components/Counter"), {
 
 const Service2 = () => {
   return (
-    <Layout>
+    <Layout header={1}>
       <PageBanner pageName={"Service"} pageTitle="Services Two" />
-      <section className="services-area-three overflow-hidden pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+      {/* <section className="services-area-three overflow-hidden pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
           <div className="row gap-100 align-items-center">
             <div className="col-lg-5">
@@ -117,89 +117,10 @@ const Service2 = () => {
         <div className="servcies-bg-shape">
           <img src="assets/images/shapes/services-bg-shape.png" alt="Shape" />
         </div>
-      </section>
+      </section> */}
       {/* Services Area Three end */}
       {/* Statistics Area start */}
-      <section
-        className="statistics-area-four text-white bgs-cover pt-80 pb-20"
-        style={{
-          backgroundImage: "url(assets/images/background/statistics-three.jpg)",
-        }}
-      >
-        <div className="container">
-          <div className="row align-items-xl-start align-items-center">
-            <div className="col-xl-5 col-lg-6">
-              <div className="statistics-content mb-55 wow fadeInUp delay-0-2s">
-                <div className="section-title mb-30">
-                  <span className="sub-title mb-15">Company Statistics</span>
-                  <h2>Learn About Our Comapny Statistics</h2>
-                </div>
-                <Link legacyBehavior href="/about">
-                  <a className="read-more">
-                    Learn More <i className="fas fa-long-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-            <div className="col-xl-7 col-lg-6">
-              <div className="row">
-                <div className="col-xl-3 col-6">
-                  <div className="counter-item counter-text-wrap wow fadeInDown delay-0-3s">
-                    <i className="flaticon-target" />
-                    <span
-                      className="count-text plus"
-                      data-speed={3000}
-                      data-stop={105}
-                    >
-                      <Counter end={105} />
-                    </span>
-                    <span className="counter-title">Project Complate</span>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-6">
-                  <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
-                    <i className="flaticon-target-audience" />
-                    <span
-                      className="count-text percent"
-                      data-speed={3000}
-                      data-stop="98.9"
-                    >
-                      <Counter end={98.9} decimals={1} />
-                    </span>
-                    <span className="counter-title">Clinets Happy</span>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-6">
-                  <div className="counter-item counter-text-wrap wow fadeInDown delay-0-3s">
-                    <i className="flaticon-customer-experience" />
-                    <span
-                      className="count-text plus"
-                      data-speed={3000}
-                      data-stop="6.7"
-                    >
-                      <Counter end={6.7} decimals={1} />
-                    </span>
-                    <span className="counter-title">Years Experience</span>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-6">
-                  <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
-                    <i className="flaticon-medal" />
-                    <span
-                      className="count-text k-plus"
-                      data-speed={3000}
-                      data-stop={63}
-                    >
-                      <Counter end={63} />
-                    </span>
-                    <span className="counter-title">Award Winning</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       {/* Statistics Area end */}
       {/* What We Provide Area Start */}
       <section className="what-we-provide overflow-hidden py-130 rpy-100 rel z-1">
@@ -437,9 +358,90 @@ const Service2 = () => {
           <img src="assets/images/background/what-we-provide.png" alt="Shape" />
         </div>
       </section>
+
+      <section
+        className="statistics-area-four text-white bgs-cover pt-80 pb-20"
+        style={{
+          backgroundImage: "url(assets/images/background/statistics-three.jpg)",
+        }}
+      >
+        <div className="container">
+          <div className="row align-items-xl-start align-items-center">
+            <div className="col-xl-5 col-lg-6">
+              <div className="statistics-content mb-55 wow fadeInUp delay-0-2s">
+                <div className="section-title mb-30">
+                  <span className="sub-title mb-15">Company Statistics</span>
+                  <h2>Learn About Our Comapny Statistics</h2>
+                </div>
+                <Link legacyBehavior href="/about">
+                  <a className="read-more">
+                    Learn More <i className="fas fa-long-arrow-right" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className="col-xl-7 col-lg-6">
+              <div className="row">
+                <div className="col-xl-3 col-6">
+                  <div className="counter-item counter-text-wrap wow fadeInDown delay-0-3s">
+                    <i className="flaticon-target" />
+                    <span
+                      className="count-text plus"
+                      data-speed={3000}
+                      data-stop={105}
+                    >
+                      <Counter end={105} />
+                    </span>
+                    <span className="counter-title">Project Complate</span>
+                  </div>
+                </div>
+                <div className="col-xl-3 col-6">
+                  <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
+                    <i className="flaticon-target-audience" />
+                    <span
+                      className="count-text percent"
+                      data-speed={3000}
+                      data-stop="98.9"
+                    >
+                      <Counter end={98.9} decimals={1} />
+                    </span>
+                    <span className="counter-title">Clinets Happy</span>
+                  </div>
+                </div>
+                <div className="col-xl-3 col-6">
+                  <div className="counter-item counter-text-wrap wow fadeInDown delay-0-3s">
+                    <i className="flaticon-customer-experience" />
+                    <span
+                      className="count-text plus"
+                      data-speed={3000}
+                      data-stop="6.7"
+                    >
+                      <Counter end={6.7} decimals={1} />
+                    </span>
+                    <span className="counter-title">Years Experience</span>
+                  </div>
+                </div>
+                <div className="col-xl-3 col-6">
+                  <div className="counter-item counter-text-wrap wow fadeInUp delay-0-3s">
+                    <i className="flaticon-medal" />
+                    <span
+                      className="count-text k-plus"
+                      data-speed={3000}
+                      data-stop={63}
+                    >
+                      <Counter end={63} />
+                    </span>
+                    <span className="counter-title">Award Winning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* What We Provide Area End */}
       {/* Pricing Plan Area start */}
-      <section className="price-plan-area overflow-hidden bgc-lighter pt-130 rpt-100 pb-100 rpb-70 rel z-1">
+      {/* <section className="price-plan-area overflow-hidden bgc-lighter pt-130 rpt-100 pb-100 rpb-70 rel z-1">
         <div className="container">
           <div className="section-title text-center mb-55 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-15">Amazing Pricing Plan</span>
@@ -565,7 +567,7 @@ const Service2 = () => {
             alt="Shape"
           />
         </div>
-      </section>
+      </section> */}
       {/* Pricing Plan Area end */}
       {/* Testimonials Area Two start */}
       <section className="testimonials-area-two py-130 rpy-100 rel z-1">
